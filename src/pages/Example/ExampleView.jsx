@@ -27,6 +27,13 @@ const ExampleView = observer(() => {
             onClickCallback={(e) => exampleStore.decrementNumber()}
           />
         </div>
+        <div className="w-[100px]">
+          <ButtonComponent
+            label={"Multiply"}
+            type={"primary"}
+            onClickCallback={(e) => exampleStore.multiplybyTwo()}
+          />
+        </div>
       </div>
     </div>
   );

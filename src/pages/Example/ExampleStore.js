@@ -20,4 +20,8 @@ export default class ExampleStore {
     this.myNumber = this.myNumber - 1;
   }
 
+  multiplybyTwo() {
+    this.myNumber =this.myNumber * 2;
+  }
+
 }
