@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { observer } from "mobx-react";
 import ToastComponent from "../components/Toast/ToastComponent";
 import ExampleView from "../pages/Example/ExampleView";
+import ToDoListExampleView from "../pages/ToDoListExample/ToDoListExampleView";
 
 const RoutesView = observer(() => {
 
@@ -18,6 +19,7 @@ const RoutesView = observer(() => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ExampleView/>}></Route>
+          <Route path="/todolistexample" element={<ToDoListExampleView/>}></Route>
         </Routes>
       </BrowserRouter>
 
