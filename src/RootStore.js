@@ -4,6 +4,7 @@ import ApiStore from "./api/ApiStore";
 import RoutesStore from "./routes/RoutesStore";
 import LoginStore from "./pages/Login/LoginStore";
 import ExampleStore from "./pages/Example/ExampleStore";
+import ToDoListExampleStore from "./pages/ToDoListExample/ToDoListExampleStore";
 
 export default class RootStore {
   constructor() {
@@ -16,5 +17,6 @@ export default class RootStore {
 
     // PAGES:
     this.exampleStore = new ExampleStore(this);
+    this.toDoListExampleStore = new ToDoListExampleStore(this);
   }
 }
